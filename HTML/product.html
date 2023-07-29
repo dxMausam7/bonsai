@@ -1,0 +1,416 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Product</title>
+    
+    <style> 
+
+body {
+  background-color: rgba(233, 245, 233, 1);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px 0px;
+  gap: 69px;
+  background-color: rgba(213, 236, 212, 1);
+}
+
+nav img {
+  width: 300px;
+  margin-left: 30px;
+  margin-right: 0px;
+  padding-right: 0%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  padding: 0%;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 23px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+.nav-links ul li a:hover {
+  color: rgb(16, 153, 34);
+}
+
+li img {
+  flex: left;
+  width: 20px;
+  color: #000000;
+  padding-right: 30px;
+  position: relative;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 4rem;
+  }
+  .input-search {
+    font-family: inherit;
+    color: #777;
+    font-size: 1.8rem;
+    min-width: 75%;
+    border: none;
+    padding: 1.8rem;
+    background: #c4ddc8;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    top:20px;
+    position: relative;
+  height: 20px;
+  }
+  .input-search:focus {
+    outline: none;
+  }
+  .btm-search {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: #c4ddc8;
+ 
+    padding: 1.8rem;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+  }
+  .herg{
+   position: absolute;
+  width: 50px;
+  height: -35px;
+left: 1007px;
+top: 140px;
+
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap: 1.8rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .our-product
+{
+  font-family: inherit;
+  font-weight: 700;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 0.05em;
+margin-bottom: 2rem;
+}
+  .product-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: rgba(236, 233, 233, 0.72);
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  
+  .product-image-container {
+  height: 10rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .productimg {
+    max-width: 100%;
+    height: 0.8 rem;
+    object-fit: cover;
+  }
+  .product-name {
+    font-size: 2.8rem;
+    margin-bottom: -1rem;
+    font-weight: 700;
+    
+  }
+  .ratings {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -3rem;
+  }
+  .stars {
+    font-size: 2rem;
+    color: #f59f00;
+  }
+  .rating-texts {
+    font-size: 1.4rem;
+  }
+  .add-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 9px;
+    background: #60f17b;
+    color: #fff;
+    transition: background 0.2s;
+  }
+  .btn:hover {
+    background: #40c057;
+  }
+  .amt {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .product-desc {
+    padding: 1.8rem 2.2rem;
+  }
+  
+  .af {
+  position: absolute;
+width: 186px;
+height: 37px;
+left: 576px;
+top: 2629px;
+  }
+
+
+
+    </style>
+</head>
+
+   <body background=" rgba(233, 245, 233, 1);">
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html"> Home  </a></li>
+            <li><a href="product.html"> Products </a></li>
+            <li><a href="blog.html"> Blog</a></li>
+            <li><a href="aboutus.html"> About </a></li>
+             <li><a href="researchpage.html"> Research</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li><a href="cart.html"> <img src="../images/Shopping cart.png"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <div class="container">
+        <form action="#!" class="search-form">
+          <input type="text" class="input-search" placeholder="Search..." />
+          <button class="btm btm-search">
+          </button>
+          <div class="herg">
+            <img src="../images/sano.png" />
+          </div>
+        </form>
+        <div class="our-product">
+          Our Products
+        </div>
+        <!-- fist product  -->
+        <main class="product-container">
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/PRODUCT 2.png" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Maple bonsai </h3>
+              <div class="ratings">
+                <p class="rating-texts">(148)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">5,000</span></p>
+                <button class="btn btn-cart"> <a href="cart.html"> Add Cart</a></button>
+              </div>
+            </div>
+            <!-- 2nd product  -->
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/PRODUCT1.png" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Ficus</h3>
+              <div class="ratings">
+                <p class="rating-texts">(98)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">5,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart</a></button>
+              </div>
+            </div>
+            <!-- 3rd product  -->
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/4uu.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Japanese Wisteria </h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(102)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">5,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 4th product  -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/5thuu.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Bonsai trees</h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(87)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">10,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart </a></button>
+              </div>
+            </div>
+          </article>
+          <!-- fifth product  -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/8thuu.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Yew bonsai</h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(122)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">9,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart </a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 6th prodcut -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/77yhuu.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Jade flower </h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(101)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">6,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 7th product  -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/44d.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Bougainvillea tree</h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(88)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">4,000</span></p>
+                <button class="btn btn-cart"> <a href="cart.html"> Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 8th product  -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/ty2.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Pomegranate Bonsai</h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(96)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">2,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 9th product  -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/ty4.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Juniper bonsai</h3>
+              <div class="ratings">
+              
+                <p class="rating-texts">(64)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">5,000</span></p>
+                <button class="btn btn-cart"><a href="cart.html">Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+          <!-- 10th product  -->
+              <article class="product-card">
+            <div class="product-image-container">
+              <img src="../images/final oic.jpg" alt="product-picture" class="productimg" />
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">Pepper tree</h3>
+              <div class="ratings">
+               
+                <p class="rating-texts">(88)</p>
+              </div>
+              <div class="add-cart">
+                <p class="price">Rs.<span class="amt">5,000</span></p>
+                <button class="btn btn-cart"> <a href="cart.html"> Add Cart</a></button>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+      <footer class="af"> CopyRightBonsai&copy;</footer>
+</body>
+</html>

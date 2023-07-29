@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      body {
+        background: url(../images/snip.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        backface-visibility: inherit;
+      }
+    </style>
+  </head>
+
+  <body background=" rgba(233, 245, 233, 1);">
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Products </a></li>
+            <li><a href="blog.html"> Blog</a></li>
+            <li><a href="aboutus.html"> About </a></li>
+            <li><a href="researchpage.html"> Research</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li>
+              <a href="cart.html"> <img src="../images/Shopping cart.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div class="main">
+      <div class="feedback">
+        <h1 class="hd">Send us your feedback</h1>
+        <form name="messageForm" onsubmit="validateForm()">
+          <label>
+            <h1>Did you find the bonsai you are searching for?</h1></label
+          >
+          <br />
+          <input type="text" name="Answer1" placeholder="Enter your message" />
+          <br />
+          <br />
+          <br />
+          <label> What was the reason for your visit? </label>
+          <br />
+          <input type="text" name="Answer2" placeholder="Enter your message" />
+          <br />
+          <br />
+          <br />
+          <label>What was the reason you could not achieve your goal?</label>
+          <br />
+          <input type="text" name="Answer3" placeholder="Enter your message" />
+          <br />
+          <br />
+          <br />
+          <label>
+            Do you have any suggestions to make our website better?
+          </label>
+
+          <br />
+          <textarea
+            rows="7"
+            cols="40"
+            name="Answer4"
+            placeholder="Enter your message"
+          ></textarea>
+          <br />
+          <br />
+          <br />
+          <div class="sub">
+            <input type="submit" value="Submit Button" />
+          </div>
+        </form>
+        <script>
+          function validateForm() {
+            var firstquestion = document.forms["messageForm"]["Answer1"].value;
+            var secondquestion = document.forms["messageForm"]["Answer2"].value;
+            var thirdquestion = document.forms["messageForm"]["Answer3"].value;
+            var fourthquestion = document.forms["messageForm"]["Answer4"].value;
+            //alert(messageDetails);
+            if (
+              firstquestion == "" ||
+              secondquestion == "" ||
+              thirdquestion == "" ||
+              fourthquestion == ""
+            ) {
+              alert("All datas not entered properly.Please enter the answers.");
+            } else {
+              alert("Thankyou for the Feedback!");
+            }
+          }
+        </script>
+      </div>
+    </div>
+    <footer class="rc">CopyRightBonsai&copy;</footer>
+  </body>
+</html>

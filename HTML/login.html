@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+       {
+           
+    alert("Are you sure you want to redirect into  login page ? ");
+}
+    </script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body background=" rgba(233, 245, 233, 1);">
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Products </a></li>
+            <li><a href="blog.html"> Blog</a></li>
+            <li><a href="aboutus.html"> About </a></li>
+            <li><a href="researchpage.html"> Research</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li>
+              <a href="cart.html"> <img src="../images/Shopping cart.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+
+    <style>
+        body {
+            background-color: #E9F5E9;
+            box-sizing: border-box;
+        }
+
+        .mainContainer {
+            display: flex;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            width: 60%;
+            margin-top: 10%;
+        }
+
+        .box {
+            width: 30%;
+            height: 350px;
+            padding: 10px;
+            border-radius: 40px;
+        }
+
+        .imagebox {
+            width: 100%;
+        }
+
+            .imagebox img {
+                width: 100%;
+            }
+
+        .ox2 {
+            margin: 10px;
+        }
+        #username,
+        #password {
+            width: 90%;
+            padding: 4px;
+            border-radius: 5px;
+            margin: 2px;
+            height: 20px;
+        }
+
+        button {
+            height: 40px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: medium;
+        }
+        .signup {
+            width: 90%;
+            padding: 4px;
+            border-radius: 5px;
+            margin: 2px;
+            height: 20px;
+            }
+            #image {
+            width: 100%;
+            margin-left: 20%;
+            height: 100%;
+        }
+
+        #imagebox {
+            align-items: flex-end;
+            margin-top: 15%;
+            height: 400px;
+        }
+        .footer {
+        position: absolute;
+        width: 186px;
+        left: 571px;
+        top: 671px;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="box" style="border: 1px solid;">
+                <div class="imagebox">
+                    <img src="../images/logo.png.png" alt="image" class="image">
+                </div>
+                <div class="ox2">
+                    <label>Username</label>
+                    <br>
+                    <input type="text" name="Username" id="Username">
+                    <br>
+                    <br>
+                    <label>Password</label>
+                    <br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button onclick="popup()">Sign-In</button>
+                <div class="signup">
+                    <label>Don't have an Account?<a href="signup.html">Sign up</a></label>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="imagebox">
+            <img src="../images/unsplash_J8oxnYHBpWM.png" alt="image" id="image">
+        </div>
+        </div>
+
+ <footer class="footer">CopyRightBonsai&copy;</footer>
+  </body>
+</html>
